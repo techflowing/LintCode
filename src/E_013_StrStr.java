@@ -1,3 +1,5 @@
+import com.sun.xml.internal.bind.v2.TODO;
+
 /**
  * 对于一个给定的 source 字符串和一个 target 字符串，你应该在 source 字符串中找出 target 字符串出现的第一个位置(从0开始)。
  * 如果不存在，则返回 -1。
@@ -36,6 +38,7 @@ public class E_013_StrStr {
      * KMP算法
      */
     public static int strStr2(String source, String target) {
+        // TODO: 2018/2/6 KMP 实现
         return -1;
     }
 }
