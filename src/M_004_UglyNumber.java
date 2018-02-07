@@ -8,14 +8,14 @@ import java.util.List;
 public class M_004_UglyNumber {
 
     public static void main(String[] args) {
-        System.out.println(nthUglyNumber(9));
+        System.out.println(new M_004_UglyNumber().nthUglyNumber(9));
     }
 
     /**
      * 用2,3,5三个数去组合拼装出所有的丑数
      * 没次循环将上一个丑数依次乘以2、3、5获取下一轮丑数，取最小值
      */
-    public static int nthUglyNumber(int n) {
+    public int nthUglyNumber(int n) {
         List<Integer> uglyNumberList = new ArrayList<>();
         uglyNumberList.add(1);
 

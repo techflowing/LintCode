@@ -7,7 +7,7 @@ public class M_005_KthLargestElement {
 
     public static void main(String[] args) {
         int[] nums = new int[]{1, 2, 3, 4, 5};
-        System.out.println(kthLargestElement(2, nums));
+        System.out.println(new M_005_KthLargestElement().kthLargestElement(2, nums));
     }
 
 
@@ -21,7 +21,7 @@ public class M_005_KthLargestElement {
      * 那么与Quick sort不同的是，Quick select只考虑所寻找的目标所在的那一部分子数组，而非像Quick sort一样分别再对两边进行分割。
      * 正是因为如此，Quick select将平均时间复杂度从O(nlogn)降到了O(n)
      */
-    public static int kthLargestElement(int k, int[] nums) {
+    public int kthLargestElement(int k, int[] nums) {
         if (nums == null || nums.length == 0) {
             return Integer.MIN_VALUE;
         }
@@ -29,7 +29,7 @@ public class M_005_KthLargestElement {
         return quickSelect(nums, 0, len - 1, k);
     }
 
-    private static int quickSelect(int[] nums, int start, int end, int k) {
+    private int quickSelect(int[] nums, int start, int end, int k) {
         // 选取随机数
         Random random = new Random();
         int index = random.nextInt(end - start + 1) + start;
@@ -55,7 +55,7 @@ public class M_005_KthLargestElement {
         }
     }
 
-    private static void swap(int[] nums, int i, int j) {
+    private void swap(int[] nums, int i, int j) {
         int temp = nums[i];
         nums[i] = nums[j];
         nums[j] = temp;

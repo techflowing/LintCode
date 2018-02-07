@@ -4,7 +4,7 @@
 public class M_003_DigitCounts {
 
     public static void main(String[] args) {
-        System.out.println(digitCounts(3, 345));
+        System.out.println(new M_003_DigitCounts().digitCounts(3, 345));
     }
 
     /**
@@ -18,7 +18,7 @@ public class M_003_DigitCounts {
      * 当某一位的数字等于k时，那么该位出现k的次数为：更高位数字x当前位数+低位数字+1
      * 当某一位的数字大于k时，那么该位出现k的次数为：(更高位数字+1)x当前位数
      */
-    public static int digitCounts(int k, int n) {
+    public int digitCounts(int k, int n) {
         int result = 0;
         int base = 1;
         if (k == 0 && n == 0) {

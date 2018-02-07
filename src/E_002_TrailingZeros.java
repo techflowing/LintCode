@@ -4,7 +4,7 @@
 public class E_002_TrailingZeros {
 
     public static void main(String[] args) {
-        System.out.println(trailingZeros(100));
+        System.out.println(new E_002_TrailingZeros().trailingZeros(100));
     }
 
     /**
@@ -20,7 +20,7 @@ public class E_002_TrailingZeros {
      * n/(5*5)表示能被25整除的数(eg. 25,50,75,100等),可以再贡献一个5;
      * 以此类推，就会得出所有的数目。
      */
-    public static long trailingZeros(long n) {
+    public long trailingZeros(long n) {
         long result = 0;
         while (n != 0) {
             result += n / 5;

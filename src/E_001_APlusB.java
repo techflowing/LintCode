@@ -4,7 +4,7 @@
 public class E_001_APlusB {
 
     public static void main(String[] args) {
-        System.out.println(aplusb(10, 63));
+        System.out.println(new E_001_APlusB().aplusb(10, 63));
     }
 
     /**
@@ -15,7 +15,7 @@ public class E_001_APlusB {
      * 所以：a + b = (a ^ b) + (a & b << 1)
      * 在进位变为0的时候，表示运算结束
      */
-    public static int aplusb(int a, int b) {
+    public int aplusb(int a, int b) {
         if (b == 0) {
             return a;
         }

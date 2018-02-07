@@ -12,12 +12,12 @@ public class M_011_SearchRangeInBinarySearchTree {
      * 二叉查找树是这样一个二叉树：一个节点的左子节点的值都比它的值小，右子节点的值都比它的值大。
      * 题目要求返回所有升序的节点值，因此采用中序遍历的方法
      */
-    public static ArrayList<Integer> searchRange(TreeNode root, int k1, int k2) {
+    public ArrayList<Integer> searchRange(TreeNode root, int k1, int k2) {
         ArrayList<Integer> integerArrayList = new ArrayList<>();
         return midOrderSearch(root, k1, k2, integerArrayList);
     }
 
-    private static ArrayList<Integer> midOrderSearch(TreeNode root, int k1, int k2, ArrayList<Integer> resultList) {
+    private ArrayList<Integer> midOrderSearch(TreeNode root, int k1, int k2, ArrayList<Integer> resultList) {
         if (root == null || resultList == null) {
             return resultList;
         }

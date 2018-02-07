@@ -14,7 +14,7 @@ public class E_008_RotateString {
     public static void main(String[] args) {
         String str = "abcdef";
         char[] chars = str.toCharArray();
-        rotateString(chars, 3);
+        new E_008_RotateString().rotateString(chars, 3);
         PrintUtil.printCharArray(chars);
     }
 
@@ -23,7 +23,7 @@ public class E_008_RotateString {
      * 前部分逆序，后部分逆序，整体逆序
      * 这里注意的是offset会大于字符串长度的情况，所以要对offeset处理：offset = offset%len
      */
-    public static void rotateString(char[] str, int offset) {
+    public void rotateString(char[] str, int offset) {
         if (str == null || str.length == 0) {
             return;
         }
@@ -33,7 +33,7 @@ public class E_008_RotateString {
         reverse(str, 0, str.length - 1);
     }
 
-    private static void reverse(char[] str, int start, int end) {
+    private void reverse(char[] str, int start, int end) {
         for (int i = start, j = end; i < j; i++, j--) {
             char temp = str[i];
             str[i] = str[j];
