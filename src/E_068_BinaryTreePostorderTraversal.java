@@ -5,7 +5,7 @@ import java.util.ArrayList;
 /**
  * 二叉树的后序遍历
  */
-public class E_067_BinaryTreePostorderTraversal {
+public class E_068_BinaryTreePostorderTraversal {
 
     /**
      * 递归方式
