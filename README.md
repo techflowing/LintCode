@@ -1,8 +1,5 @@
 
-主要内容为学习算法，刷 [LintCode](http://lintcode.com/) 过程的记录，很大程度上参考了 [九章算法](http://www.jiuzhang.com/solution/) 的代码和讲稿，非常感谢，同时也参考了一些其他教材和优质博客，尽量找出通俗易懂较为优质的AC代码。本人非专业ACMer，代码中如有不足，欢迎批评指正。当前仅有部分题解，持续更新中...
-
-#### 项目地址
-[GitHub](https://github.com/techflowing/LintCode)， 欢迎`Fork` or `Star`
+主要内容为学习算法，刷 [LintCode](http://lintcode.com/) 过程的记录，很大程度上参考了 [九章算法](http://www.jiuzhang.com/solution/) 的代码和讲稿，非常感谢，同时也参考了一些其他教材和优质博客，尽量找出通俗易懂较为优质的AC代码。本人非专业ACMer，代码中如有不足，欢迎批评指正。当前仅有部分题解，持续更新中...，欢迎`Fork` or `Star`
 
 #### 项目说明
 为区分题目，类名称 `未遵循` Java 大驼峰命名规范，统一采用 `题目难度_编号_题目名称` 方式，如 `E_001_APlusB`
